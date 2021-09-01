@@ -1,0 +1,17 @@
+version: '3.5'
+services:
+    mguplon:
+        build: ./
+        restart: always
+        volumes:
+            - /opt/www:/opt/www
+            - /tmp:/tmp/host
+            - ./php.ini:/usr/local/etc/php/php.ini
+            - /media/publico:/media/publico           
+            - /etc/timezone:/etc/timezone:ro
+            - /etc/localtime:/etc/localtime:ro
+            - /usr/share/zoneinfo:/usr/share/zoneinfo
+        extra_hosts:
+            - "host.docker.internal:host-gateway"  
+        ports:
+            - "9002:9000"              

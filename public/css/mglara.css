@@ -1,0 +1,65 @@
+html {
+  overflow-y: scroll;
+}  
+body {
+    position: relative;
+    padding-right: 0 !important;      
+}
+table.dataTable.table-sm thead th.sorting:after, 
+table.dataTable.table-sm thead th.sorting_asc:after, 
+table.dataTable.table-sm thead th.sorting_desc:after {
+    top: 2px;
+    right: 4px;
+}
+table.dataTable.table-sm {
+    margin-top: 15px !important;
+}
+table.dataTable.table-sm thead .sorting::before, 
+table.dataTable.table-sm thead .sorting::after, 
+table.dataTable.table-sm thead .sorting_asc::before, 
+table.dataTable.table-sm thead .sorting_asc::after, 
+table.dataTable.table-sm thead .sorting_desc::before, 
+table.dataTable.table-sm thead .sorting_desc::after, 
+table.dataTable.table-sm thead .sorting_asc_disabled::before, 
+table.dataTable.table-sm thead .sorting_asc_disabled::after, 
+table.dataTable.table-sm thead .sorting_desc_disabled::before, 
+table.dataTable.table-sm thead .sorting_desc_disabled::after {
+    bottom: 0.5em;
+}
+.select2 { 
+    width: 100% !important; 
+}
+.select2-container .select2-selection--single .select2-selection__arrow {
+    width: auto !important;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+    line-height: inherit !important;
+}
+input[type="number"].form-control {
+    text-align: right;
+}
+input[type="date"].form-control, 
+input[type="time"].form-control, 
+input[type="datetime-local"].form-control, 
+input[type="month"].form-control {
+    line-height: 1.4rem !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__clear {
+    z-index: 100 !important;
+}
+
+
+.content-page-quiosque {
+  /*margin-left: 250px;*/
+  overflow: hidden; 
+}
+
+.content-page-quiosque .content {
+  padding: 0 5px;
+  margin-top: 10px;
+  /*margin-top: 73px; */
+}
+
+.btn-secondary a, .btn-secondary a:hover {
+    color: #373a3c;
+}
